@@ -1,0 +1,17 @@
+---
+title: "Practical 1 Part 3"
+author: "Ellen Taylor"
+---
+```{r}
+round(3.14159)
+```
+```{r}
+print(rep(x = 5, times = 7))
+my_variable <- 12
+print(my_variable)
+```
+```{r}
+x <- 4e-3
+print(x)
+```
+

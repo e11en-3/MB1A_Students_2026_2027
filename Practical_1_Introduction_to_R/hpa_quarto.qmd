@@ -1,0 +1,10 @@
+---
+title: "Practical 1 Part 2"
+author: "Ellen Taylor"
+---
+
+```{r}
+sum(180, 109, 55, 83, 157, 185, 57, 31, 60, 110, 45, 98)
+```
+The total number of genes with regionally elevated expression in the forebrain of humans, pigs and mice was 1170.
+
