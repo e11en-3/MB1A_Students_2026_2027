@@ -1,0 +1,37 @@
+---
+title: "ukhsa_data_analysis"
+author: "Ellen Taylor"
+---
+```{r}
+library(tidyverse)
+library(gt)
+```
+```{r}
+rhinovirus <- read_csv("data/ukhsa-chart-download-rhinovirus.csv")
+
+gt(head(rhinovirus))
+```
+```{r}
+weather <- read_csv("data/weather_data.csv")
+```
+```{r}
+ggplot(weather)
+ggplot(weather, aes(
+  x = observation_time,
+  y = temperature_c
+))
+ggplot(weather, aes(
+  x = observation_time,
+  y = temperature_c
+)) +
+  geom_line()
+ggplot(weather, aes(
+  x = observation_time,
+  y = temperature_c
+)) +
+  geom_line(colour = "blue") +
+  xlab("Date") +
+  ylab("Temp (C)") +
+  ggtitle("Temperature by Date")
+```
+
