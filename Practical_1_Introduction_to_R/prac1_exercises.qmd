@@ -3,6 +3,12 @@ title: "Practical 1 Part 3"
 author: "Ellen Taylor"
 ---
 ```{r}
+library(tidyverse)
+library(gt)
+```
+
+
+```{r}
 round(3.14159)
 ```
 ```{r}
@@ -13,5 +19,67 @@ print(my_variable)
 ```{r}
 x <- 4e-3
 print(x)
+```
+```{r}
+install.packages("fortunes")
+```
+```{r}
+library(fortunes)
+```
+```{r}
+cell_id_1 <- "CX1"
+cell_id_2 <- "CX2"
+
+treated_1 <- TRUE
+treated_2 <- FALSE
+
+n_before_1 <- 5415
+n_before_2 <- 8123
+
+n_after_1 <- 1432
+n_after_2 <- 7543
+cell_id <- c(cell_id_1, cell_id_2)
+treated <- c(treated_1, treated_2)
+n_before <- c(n_before_1, n_before_2)
+n_after <- c(n_after_1, n_after_2)
+```
+```{r}
+nice_food <- c("cheese", "beans", "potatoes")
+
+print(nice_food[1])
+```
+```{r}
+# for example
+all_my_pets <- c("dog", "horse", "guinea pig", "chicken", "cat")
+my_only_bird <- all_my_pets[4]
+print(my_only_bird)
+```
+```{r}
+my_data_frame <- tibble(
+  fruit = c("apple", "pear", "banana"),
+  length = c(22, 30, 55),
+  weight = c(150, 165, 170)
+)
+
+
+print(my_data_frame)
+```
+```{r}
+my_data_frame <- tibble(
+  fruit = c("apple", "pear", "banana"),
+  length = c(22, 30, 55),
+  weight = c(150, 165, 170)
+)
+
+gt(my_data_frame)
+```
+```{r}
+my_data_frame <- tibble(
+  cell_ID = c("CX1", "CX2"),
+  treated = c(TRUE, FALSE),
+  numb_cells_before = c(5415, 8123),
+  num_cells_after = c(1432, 7543)
+)
+gt(my_data_frame)
 ```
 
