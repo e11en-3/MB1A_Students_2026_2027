@@ -7,10 +7,7 @@ library(tidyverse)
 library(gt)
 ```
 ```{r}
-rhinovirus <- read_csv("data/ukhsa-chart-download-rhinovirus.csv")
 
-gt(head(rhinovirus))
-```
 ```{r}
 weather <- read_csv("data/weather_data.csv")
 ```

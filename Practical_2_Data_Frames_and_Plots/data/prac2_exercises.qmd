@@ -1,0 +1,32 @@
+---
+title: "prac2_exercises"
+author: "Ellen Taylor"
+---
+```{r}
+input_vec <- c(5, -10, 4, -3)
+result <- input_vec |>
+mean() |>
+abs() |>
+round() 
+print(result)
+```
+```{r}
+y <- 12
+print(y == 7)
+print(y < 15)
+print(y > 20)
+print(y <= 12)
+```
+```{r}
+bird_breeding_exc <- bird_breeding_selected |>
+  filter(Site != "Spain")
+gt(bird_breeding_exc)
+```
+```{r}
+bird_migration_exc <- bird_migration_selected |>
+  filter(Site != "Spain")
+
+gt(head(bird_migration_exc))
+```
+
+
